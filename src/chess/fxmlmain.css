@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.chessButton{
+    -fx-border-color: black;
+    -fx-border-width: 20;
+    -fx-border-insets: 1;
+    -fx-background-image: url("../image/woodBackground.jpg");
+}
+.warButton{
+    -fx-background-image: url("../images/A♣.png");
+    -fx-border-color: black;
+    -fx-border-width: 20;
+}

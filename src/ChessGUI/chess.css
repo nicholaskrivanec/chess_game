@@ -1,0 +1,30 @@
+#AnchorPane{
+    -fx-background-image:url("../image/woodBackground.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center, center;
+}
+
+.darkSquare{
+    -fx-fill: skyblue;
+}
+
+.lightSquare{
+    -fx-fill: PapayaWhip;
+}
+
+.coordinate{
+    -fx-text-fill: whitesmoke;
+    -fx-alignment: center;
+}
+
+.circle{
+    -fx-fill: purple;
+}
+
+.radial{
+
+}
+
+
+

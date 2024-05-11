@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="800.0" minWidth="1100.0" prefHeight="870.0" prefWidth="1388.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChessGUI.FXMLChessController">
+    <stylesheets>
+        <URL value="@chess.css" />
+    </stylesheets>
+    
+    <children>
+        <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu id="menu" fx:id="menu" mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem id="rules" mnemonicParsing="false" onAction="#onHelpMenuButton" text="View Rules" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <VBox layoutX="50.0" layoutY="47.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox prefHeight="689.0" prefWidth="1281.0" spacing="25.0">
+               <children>
+                      <BorderPane fx:id="boarderPane" prefHeight="689.0" prefWidth="638.0">
+                          <left>
+                              <GridPane fx:id="rankCoordinates" prefHeight="649.0" prefWidth="20.0" BorderPane.alignment="BOTTOM_RIGHT">
+                                  <columnConstraints>
+                                      <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="NEVER" maxWidth="20.0" minWidth="20.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                  </rowConstraints>
+                                  <children>
+                                      <Label id="r8" fx:id="r8" styleClass="coordinate" text="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r7" fx:id="r7" styleClass="coordinate" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r6" fx:id="r6" styleClass="coordinate" text="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r5" fx:id="r5" styleClass="coordinate" text="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r4" fx:id="r4" styleClass="coordinate" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r3" fx:id="r3" styleClass="coordinate" text="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="r2" fx:id="r2" styleClass="coordinate" text="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="f1" fx:id="r1" styleClass="coordinate" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                  </children>
+                                  <BorderPane.margin>
+                                      <Insets />
+                                  </BorderPane.margin>
+                              </GridPane>
+                          </left>
+                          <bottom>
+                              <GridPane fx:id="fileCoordinates" BorderPane.alignment="TOP_CENTER">
+                                  <columnConstraints>
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints fillHeight="false" maxHeight="20.0" minHeight="20.0" vgrow="NEVER" />
+                                  </rowConstraints>
+                                  <children>
+                                      <Label id="fa" fx:id="fa" styleClass="coordinate" text="a" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fb" fx:id="fb" styleClass="coordinate" text="b" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fc" fx:id="fc" styleClass="coordinate" text="c" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fd" fx:id="fd" styleClass="coordinate" text="d" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fe" fx:id="fe" styleClass="coordinate" text="e" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="ff" fx:id="ff" styleClass="coordinate" text="f" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fg" fx:id="fg" styleClass="coordinate" text="g" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                      <Label id="fh" fx:id="fh" styleClass="coordinate" text="h" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                          <rotationAxis>
+                                              <Point3D y="90.0" z="1.0" />
+                                          </rotationAxis>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                      </Label>
+                                  </children>
+                                  <BorderPane.margin>
+                                      <Insets left="20.0" />
+                                  </BorderPane.margin>
+                              </GridPane>
+                          </bottom>
+                          <top>
+                              <GridPane BorderPane.alignment="CENTER">
+                                  <columnConstraints>
+                                      <ColumnConstraints hgrow="SOMETIMES" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints maxHeight="20.0" minHeight="20.0" vgrow="SOMETIMES" />
+                                  </rowConstraints>
+                                  <BorderPane.margin>
+                                      <Insets />
+                                  </BorderPane.margin>
+                           <children>
+                              <Label fx:id="notificationLabel" text="CHECK " textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                              </GridPane>
+                          </top>
+                          <right>
+                              <GridPane BorderPane.alignment="CENTER">
+                                  <columnConstraints>
+                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      <RowConstraints vgrow="SOMETIMES" />
+                                  </rowConstraints>
+                              </GridPane>
+                          </right>
+                      </BorderPane>
+                        <VBox alignment="TOP_CENTER" prefHeight="689.0" prefWidth="423.0" style="-fx-background-color: #152330;">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="251.0" spacing="25.0">
+                                    <children>
+                                        <ToggleButton fx:id="flipButton" mnemonicParsing="false" onAction="#OnFlipClick" prefHeight="25.0" prefWidth="45.0" text="Flip" textAlignment="CENTER" />
+                                        <Button mnemonicParsing="false" onMousePressed="#onRotateDown" onMouseReleased="#onRotateReleased" prefHeight="31.0" prefWidth="93.0" text="Rotate " />
+                              <RadioButton fx:id="rBtn" mnemonicParsing="false" prefHeight="21.0" prefWidth="146.0" text="auto flip" textFill="WHITE" wrapText="true" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox>
+                                    <children>
+                                        <GridPane>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" percentWidth="20.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label contentDisplay="CENTER" styleClass="coordinate" text="Move" GridPane.halignment="CENTER" />
+                                                <Label styleClass="coordinate" text="White" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <Label styleClass="coordinate" text="Black" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                            </children>
+                                        </GridPane>
+                                        <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="454.0" prefWidth="257.0">
+                                            <content>
+                                                <GridPane fx:id="gameJournal">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints maxHeight="35.0" minHeight="35.0" vgrow="NEVER" />
+                                                    </rowConstraints>
+                                                </GridPane>
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </VBox>
+                                <HBox alignment="CENTER" spacing="10.0">
+                                    <children>
+                                        <Button id="forward" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onRewindButton" text="&lt;&lt;" textAlignment="CENTER">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </Button>
+                                        <Button id="fastForward" mnemonicParsing="false" onAction="#onBackButtonClicked" text="&lt;" textAlignment="CENTER" />
+                                        <Button id="rewind" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onForwardButton" text="&gt;" textAlignment="CENTER">
+
+                                        </Button>
+                                        <Button id="back" mnemonicParsing="false" onAction="#onFastForwardButton" text="&gt;&gt;" textAlignment="CENTER" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                        <Group>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Group>
+                        <ChoiceBox id="CPU Color" fx:id="choiceBox" onContextMenuRequested="#onCPUColorChanged" prefHeight="31.0" prefWidth="393.0">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                                <HBox fillHeight="false" spacing="10.0">
+                                    <children>
+                                        <Button minWidth="38.0" mnemonicParsing="false" onAction="#onUndoButton" prefHeight="31.0" prefWidth="132.0" text="Undo" />
+                              <Button mnemonicParsing="false" onAction="#onNewGame" prefHeight="31.0" prefWidth="175.0" text="New Game" />
+                                        <Button mnemonicParsing="false" onAction="#OnResignClicked" prefHeight="31.0" prefWidth="170.0" text="Resign">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                            </padding>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                        </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="25.0">
+               <children>
+                  <Label text="Fen Position" textFill="WHITE" />
+                  <TextField fx:id="fenPositionTxt" prefHeight="25.0" prefWidth="800.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="717.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChessGUI.FXMLChessRulesController">
+   <children>
+      <TabPane layoutX="90.0" layoutY="60.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Wikipedia Rules">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Hyperlink id="wikipedia" layoutX="409.0" layoutY="399.0" onAction="#onRulesHyperLinkClicked" text="Wikipedia Chess Rules" />
+                              <TextArea editable="false" layoutX="39.0" layoutY="25.0" prefHeight="339.0" prefWidth="523.0" text="The following Rules are directly taken from     https://en.wikipedia.org/wiki/Rules_of_chess&#10;&#10;The rules of chess (also known as the laws of chess) are rules governing the play of the game of chess. While the exact origins of chess are unclear, modern rules first took form during the Middle Ages. The rules continued to be slightly modified until the early 19th century, when they reached essentially their current form. The rules also varied somewhat from place to place. Today, the standard rules are set by FIDE (Fédération Internationale des Échecs), the international governing body for chess. Slight modifications are made by some national organizations for their own purposes. There are variations of the rules for fast chess, correspondence chess, online chess, and Chess960.Chess is a two-player board game utilizing a chessboard and sixteen pieces of six types for each player. Each type of piece moves in a distinct way. The goal of the game is to checkmate (threaten with unescapable capture) the opponent's king. Games do not necessarily end with checkmate; players often resign if they believe they will lose. A game can also end in a draw in several ways.Besides the basic moves of the pieces, rules also govern the equipment used, time control, conduct and ethics of players, accommodations for physically challenged players, and recording of moves using chess notation. Procedures for resolving irregularities that can occur during a game are provided as well." wrapText="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Initial setup">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextArea editable="false" layoutX="25.0" layoutY="27.0" prefHeight="473.0" prefWidth="546.0" text="Chess is played on a chessboard, a square board divided into 64 squares (eight-by-eight) of alternating color, which is similar to that used in draughts (checkers) (FIDE 2008). No matter what the actual colors of the board, the lighter-colored squares are called &quot;light&quot; or &quot;white&quot;, and the darker-colored squares are called &quot;dark&quot; or &quot;black&quot;. Sixteen &quot;white&quot; and sixteen &quot;black&quot; pieces are placed on the board at the beginning of the game. The board is placed so that a white square is in each player's near-right corner. Horizontal rows are called ranks and vertical rows are called files. Each player controls sixteen At the beginning of the game, the pieces are arranged ... for each side one king, one queen, two rooks, two bishops, two knights, and eight pawns. The pieces are placed, one on a square, as follows:&#10;&#10;-The rooks are placed on the outside corners, right and left edge.&#10;&#10;-The knights are placed immediately inside of the rooks.&#10;&#10;-The bishops are placed immediately inside of the knights.&#10;&#10;-The queen is placed on the central square of the same color of that of the player: white queen on the white square and black queen on the black square.&#10;&#10;-The king takes the vacant spot next to the queen.&#10;&#10;-The pawns are placed one square in front of all of the other pieces.&#10;&#10;Popular mnemonics used to remember the setup are &quot;queen on her own color&quot; and &quot;white on right&quot;. The latter refers to setting up the board so that the square closest to each player's right is white (Schiller 2003:16–17)." wrapText="true" />
+                           </children></Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Gameplay">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane />
+                        <TextArea editable="false" layoutX="29.0" layoutY="28.0" prefHeight="239.0" prefWidth="540.0" text="The player controlling the white pieces is named &quot;White&quot;; the player controlling the black pieces is named &quot;Black&quot;. White moves first, then players alternate moves. Making a move is required; it is not legal to skip a move, even when having to move is detrimental. Play continues until a king is checkmated, a player resigns, or a draw is declared, as explained below. In addition, if the game is being played under a time control players who exceed their time limit lose the game.The official chess rules do not include a procedure for determining who plays White. Instead, this decision is left open to tournament-specific rules (e.g. a Swiss system tournament or Round-robin tournament) or, in the case of non-competitive play, mutual agreement, in which case some kind of random choice is often employed. A common method is for one player to conceal a piece (usually a pawn) of each color in either hand; the other player chooses a hand to open, and receives the color of the piece that is revealed.&#10;&#10;" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Movement">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane />
+                        <TextArea editable="false" layoutX="24.0" layoutY="28.0" prefHeight="483.0" prefWidth="538.0" text="Each type of chess piece has its own method of movement. A piece moves to a vacant square except when capturing an opponent's piece.Except for any move of the knight and castling, pieces cannot jump over other pieces. A piece is captured (or taken) when an attacking enemy piece replaces it on its square (en passant is the only exception). The captured piece is thereby permanently removed from the game.&#10;&#10; The king can be put in check but cannot be captured.The king moves exactly one square horizontally, vertically, or diagonally. A special move with the king known as castling is allowed only once per player, per game (see below).A rook moves any number of vacant squares in a horizontal or vertical direction. It also is moved when castling.&#10;&#10;A bishop moves any number of vacant squares in any diagonal direction.&#10;&#10;The queen moves any number of vacant squares in a horizontal, vertical, or diagonal direction.&#10;&#10;A knight moves to the nearest square not on the same rank, file, or diagonal. (This can be thought of as moving two squares horizontally then one square vertically, or moving one square horizontally then two squares vertically—i.e. in an &quot;L&quot; pattern.) The knight is not blocked by other pieces: it jumps to the new location.&#10;&#10;Pawns have the most complex rules of movement:A pawn moves straight forward one square, if that square is vacant. If it has not yet moved, a pawn also has the option of moving two squares straight forward, provided both squares are vacant. Pawns cannot move backwards.Pawns are the only pieces that capture differently from how they move. A pawn can capture an enemy piece on either of the two squares diagonally in front of the pawn (but cannot move to those squares if they are vacant).The pawn is also involved in the two special moves en passant and promotion (Schiller 2003:17–19)." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Special Moves">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="29.0" layoutY="38.0" prefHeight="434.0" prefWidth="530.0" text="Castling&#10;     Castling consists of moving the king two squares towards a rook, then placing the rook on the other side of the king, adjacent to it.[2] Castling is only permissible if all of the following conditions hold:The king and rook involved in castling must not have previously moved;There must be no pieces between the king and the rook;The king may not currently be in check, nor may the king pass through or end up in a square that is under attack by an enemy piece (though the rook is permitted to be under attack and to pass over an attacked square);The king and the rook must be on the same rank (Schiller 2003:19).[3]&#10;&#10;En passant&#10;    When a pawn advances two squares from its original square and ends the turn adjacent to a pawn of the opponent's on the same rank, it may be captured by that pawn of the opponent's, as if it had moved only one square forward. This capture is only legal on the opponent's next move immediately following the first pawn's advance. The diagrams on the right demonstrate an instance of this: if the white pawn moves from a2 to a4, the black pawn on b4 can capture it en passant, moving from b4 to a3 while the white pawn on a4 is removed from the board.&#10;&#10;Pawn promotion&#10;    If a player advances a pawn to its eighth rank, the pawn is then promoted (converted) to a queen, rook, bishop, or knight of the same color at the choice of the player (a queen is usually chosen). The choice is not limited to previously captured pieces. Hence it is theoretically possible for a player to have up to nine queens or up to ten rooks, bishops, or knights if all of their pawns are promoted. If the desired piece is not available, the player should call the arbiter to provide the piece (Schiller 2003:17–19).[4]" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Check">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane />
+                        <TextArea editable="false" layoutX="29.0" layoutY="31.0" prefHeight="303.0" prefWidth="542.0" text="A king is in check when it is under attack by at least one enemy piece. A piece unable to move because it would place its own king in check (it is pinned against its own king) may still deliver check to the opposing player. It is illegal to make a move that places or leaves one's king in check. The possible ways to get out of check:&#10; &#10;-Move the king to a square where it is not in check.&#10;&#10;-Capture the checking piece (possibly with the king). &#10;&#10;-Block the check by placing a piece between the king and the opponent's threatening piece (Just 2014), (Polgar &amp; Truong 2005:32,103), (Burgess 2009:550).&#10;&#10;If it is not possible to get out of check, the king is checkmated and the game is over. In informal games, it is customary to announce &quot;check&quot; when making a move that puts the opponent's king in check. However, in formal competitions check is rarely announced (Just 2014)." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Draws">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane />
+                        <TextArea editable="false" layoutX="43.0" layoutY="44.0" prefHeight="620.0" prefWidth="506.0" text="The game ends in a draw if any of these conditions occur:&#10;&#10;-The game is automatically a draw if the player to move is not in check but has no legal move. This situation is called a stalemate. &#10;&#10;-The game is immediately drawn when there is no possibility of checkmate for either side with any series of legal moves. This draw is often due to insufficient material, including the endgames&#10;*king against king;&#10;*king against king and bishop;&#10;*king against king and knight;&#10;*king and bishop against king and bishop, with both bishops on squares of the same color (see Checkmate#Unusual mates).[19]&#10;&#10;-Both players agree to a draw after one of the players makes such an offer.&#10;&#10;The player having the move may claim a draw by declaring that one of the following conditions exists, or by declaring an intention to make a move which will bring about one of these conditions:&#10;&#10;-Fifty-move rule: There has been no capture or pawn move in the last fifty moves by each player.&#10;&#10;-Threefold repetition: The same board position has occurred three times with the same player to move and all pieces having the same rights to move, including the right to castle or capture en passant.&#10;&#10;If the claim is proven true, the game is drawn (Schiller 2003:21,26–28). &#10;&#10;At one time, if a player was able to check the opposing king continually (perpetual check) and the player indicated their intention to do so, the game was drawn. This rule is no longer in effect; however, players will usually agree to a draw in such a situation, since either the rule on threefold repetition or the fifty-move rule will eventually be applicable (Staunton 1847:21–22), (Reinfeld 1954:175)." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Time control">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="40.0" layoutY="29.0" prefHeight="103.0" prefWidth="521.0" text="A game played under time control will end as a loss for a player who uses up all of their allotted time, unless the opponent cannot possibly checkmate him. There are different types of time control. Players may have a fixed amount of time for the entire game or they may have to make a certain number of moves within a specified time. Also, a small increment of time may be added for each move made." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

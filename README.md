@@ -1,2 +1,2 @@
 # chess_game
-College Chess App
+Chess App
